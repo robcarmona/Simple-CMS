@@ -1,11 +1,9 @@
 class CreateSubjects < ActiveRecord::Migration
   def self.up
     create_table :subjects do |t|
-t.string "name"
-t.integer "position"
-t.boolean "visible",:defualt=>false
-
-
+      t.string "name"
+      t.integer "position"
+      t.boolean "visible",:defualt=>false
       t.timestamps
     end
   end
